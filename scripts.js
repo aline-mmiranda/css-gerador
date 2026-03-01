@@ -17,7 +17,7 @@
     [x] Pegar o que tem dentro dele
     [x] Enviar para a IA
     [x] Pegar a resposta da IA e colocar na tela 
-    [/] Estilizar a resposta     
+    [ ] Estilizar a resposta     
 
     // Ir no HTML e pegar o botão
     // HTML = document (documento)
@@ -44,7 +44,7 @@ async function gerarCodigo() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer <SUA CHAVE AQUI>"
+            "Authorization": "Bearer <key aqui>"
         },
         body: JSON.stringify({
             model: "llama-3.3-70b-versatile",
@@ -71,7 +71,6 @@ async function gerarCodigo() {
 
 // ficar de olho no botao, quando clicado chamar o gerarCodigo
 botao.addEventListener("click", gerarCodigo)
-
 
 
 // vizinho curioso (addEventListener)
