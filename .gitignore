@@ -1,0 +1,16 @@
+# Chaves e Segredos (MUITO IMPORTANTE)
+.env
+.env.local
+*.log
+
+# Dependências (Pasta pesada que o GitHub não precisa)
+node_modules/
+dist/
+build/
+
+# Arquivos do Sistema e Editor
+.DS_Store
+.vscode/
+.idea/
+
+config.js
